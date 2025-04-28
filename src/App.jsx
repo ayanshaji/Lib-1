@@ -39,6 +39,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/sign' element={<Signin/>}/>
         <Route path="/add" element={<AddBook books={books} setBooks={setBooks} />} />
         <Route path="/view" element={<ViewBooks books={books} />} />
         <Route path="/borrow" element={<BorrowBook books={books} setBooks={setBooks} />} />
